@@ -1,0 +1,8 @@
+ docker exec root_db_1 psql -U postgres -c "create database test;"
+  924  docker-compose down
+  925  docker-compose up -d
+  927  docker exec root_db_1 psql -U postgres -c "\l+"
+  928  docker-compose down
+  929  docker-compose up -d
+  930  docker exec root_db_1 psql -U postgres -c "\l+"
+
