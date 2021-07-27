@@ -6,3 +6,7 @@
   929  docker-compose up -d
   930  docker exec root_db_1 psql -U postgres -c "\l+"
 
+
+docker exec -it root_db_1 bash
+  955  docker cp 'root_db_1':/var/lib/postgresql/data /~
+
